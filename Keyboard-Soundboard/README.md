@@ -41,4 +41,4 @@ Sounds used from:
 ## 🧑‍💻 Author
 
 *Viraj Vekariya*  
-Connect on [GitHub](https://github.com/Viraj09)
+Connect on [GitHub](https://github.com/Virajv09)
