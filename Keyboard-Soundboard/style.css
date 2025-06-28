@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  padding: 2rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Title and subtitle */
+h1 {
+  font-size: 2.8rem;
+  color: #00ffc8;
+  text-shadow: 0 0 10px #00ffc8, 0 0 30px #00ffc8;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+/* Keyboard layout */
+.keyboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  gap: 15px;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Key buttons */
+.key {
+  background: #111;
+  color: #00ffc8;
+  padding: 20px;
+  font-size: 1.8rem;
+  border-radius: 10px;
+  border: 2px solid #00ffc8;
+  box-shadow: 0 0 10px #00ffc8, inset 0 0 5px #00ffc8;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  user-select: none;
+}
+
+.key:hover {
+  background: #00ffc8;
+  color: #111;
+  transform: scale(1.05);
+}
+
+/* Key animation when playing */
+.key.playing {
+  background: #fff;
+  color: #000;
+  transform: scale(1.15);
+  box-shadow: 0 0 25px #00ffc8, inset 0 0 10px #00ffc8;
+}
